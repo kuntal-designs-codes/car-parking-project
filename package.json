@@ -1,0 +1,30 @@
+{
+  "name": "car-parking-project",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "clean": "rm -rf node_modules package-lock.json && npm install && npm start",
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node --unhandled-rejections=strict src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuntal-designs-codes/car-parking-project.git"
+  },
+  "author": "kuntal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuntal-designs-codes/car-parking-project/issues"
+  },
+  "homepage": "https://github.com/kuntal-designs-codes/car-parking-project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "mongoose": "^5.12.12"
+  }
+}
